@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Media File Name Generator</title>
+</head>
+<body>
+    <h1>Random Media File Name Generator</h1>
+    <p style="width:50%">I originally attempted to write this program in Python in 2019 but I never completed it, so in 2021 (?), I decided to finish it in HTML/JavaScript. I then recently decided to rewrite my JavaScript code with a better understanding of the <code>Math.random()</code> function and rest parameters. I mostly wrote this program to search for these random file names in sites like YouTube and Google and see if it would produce any interesting search results.</p>
+    <p>The format for a photo or video taken by an Android phone is as follows:</p>
+    <p>yyyymmdd_hhmmss</p>
+    <p>So if a video has the file name "<span style="color:red;">2021</span><span style="color:orange;">06</span><span style="color:yellow;">29</span><span>_</span><span style="color:green;">02</span><span style="color:blue;">07</span><span style="color:purple;">47</span>.mp4, that means the file was created on <span style="color:red;">2021</span>/<span style="color:orange;">06</span>/<span style="color:yellow;">29</span> at <span style="color:green;">02</span>:<span style="color:blue;">07</span>:<span style="color:purple;">47 AM.</span></p>
+    <p>Selecting one of the radio buttons will change the URLs of each item in the list to take you to the selected site. Click the Generate button to produce a new set of random file names.</p>
+    <form>
+        <input type="radio" name="sites" id="dailymotion">
+        <label for="dailymotion">Dailymotion</label>
+        <br>
+        <input type="radio" name="sites" id="flickr">
+        <label for="flickr">Flickr</label>
+        <br>
+        <input type="radio" name="sites" id="google">
+        <label for="google">Google</label>
+        <br>
+        <input type="radio" name="sites" id="wikimedia">
+        <label for="wikimedia">Wikimedia</label>
+        <br>
+        <input type="radio" name="sites" id="youtube">
+        <label for="youtube">YouTube</label>
+        <br>
+        <button type="button" id="generatebutton">Generate</button>
+    </form>
+    <ul id="vidstringsUL">
+        <li><a href="" target="_blank" id="android"></a></li>
+        <li><a href="" target="_blank" id="video">video-</a></li>
+        <li><a href="" target="_blank" id="vlc">vlc-record-</a></li>
+        <li><a href="" target="_blank">CIMG</a></li>
+        <li><a href="" target="_blank">DSC0</a></li>
+        <li><a href="" target="_blank">DSCF</a></li>
+        <li><a href="" target="_blank">GEDC0</a></li>
+        <li><a href="" target="_blank">IMG_</a></li>
+        <li><a href="" target="_blank">MAH</a></li>
+        <li><a href="" target="_blank">MOV0</a></li>
+        <li><a href="" target="_blank">MVI_</a></li>
+        <li><a href="" target="_blank">PICT</a></li>
+        <li><a href="" target="_blank">THRS</a></li>
+    </ul>
+    <script src="RandomFileName2.js"></script> <!-- remove the 2 for an earlier version of the script-->
+    <!--
+    <span><a href="" id="android"></a></span>
+    <br>
+    <span><a href="" id="CIMG"></a></span>
+    <br>
+    <span><a href="" id="DSCF"></a></span>
+    <br>
+    <span><a href="" id="GEDC"></a></span>
+    <br>
+    <span><a href="" id="IMG_"></a></span>
+    <br>
+    <span><a href="" id="MAH"></a></span>
+    <br>
+    <span><a href="" id="MOV"></a></span>
+    <br>
+    <span><a href="" id="MVI_"></a></span>
+    <br>
+    <span><a href="" id="PICT"></a></span>
+    -->
+</body>
+</html>
