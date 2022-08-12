@@ -5,6 +5,7 @@ const URLS = [
     "https://www.facebook.com/watch/search/?q=",
     "https://www.flickr.com/search/?text=",
     "https://www.google.com/search?q=",
+    "https://vimeo.com/search?q=",
     "https://commons.wikimedia.org/w/index.php?search=",
     "https://www.youtube.com/results?search_query="];
 function main()
@@ -98,6 +99,7 @@ document.querySelector("#dailymotion").addEventListener("click", hrefs);
 document.querySelector("#flickr").addEventListener("click", hrefs);
 document.querySelector("#facebook").addEventListener("click", hrefs);
 document.querySelector("#google").addEventListener("click", hrefs);
+document.querySelector("#vimeo").addEventListener("click", hrefs);
 document.querySelector("#wikimedia").addEventListener("click", hrefs);
 document.querySelector("#youtube").addEventListener("click", hrefs);
 document.querySelector("#generatebutton").addEventListener("click", main);
